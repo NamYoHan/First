@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 전체적인 배경색 */
+html {
+    background-color: #F6F6F6;
+}
+
+/* 전체적인 틀 */
+.Wrap {
+    /* 전체적인 중앙정렬 및 크기 제한 */
+    margin: auto;
+    width: 405px;
+}
+
+/* naver 로고 조정*/
+.Image {
+    /* 조금더 완벽한 중앙정렬을 위해 사용 */
+    margin: auto;
+    /* 로고와 Input속성간 거리조절을 위해 사용 */
+    padding: 35px;
+    /* block 속성으로 이미지가 자리차지하도록 만듦 */
+    display: block;
+    /* 로고 크기 조절 */
+    height: 43px;
+}
+
+
+
+/* ul 리스트 속성을 없앰 */
+ul {
+    list-style-type: none;
+}
+
+/* h4 글자 크기, 간격, 왼쪽정렬 */
+h4 {
+    text-align: left;
+    font-size: 14px;
+}
+
+/* 에러관련 모음집 */
+span {
+    color: red;
+    font-size: 0.7em;
+}
+/* 에러메세지와 거리주기 */
+label {
+    padding: 0px 0px 0px 10px;
+}
+
+/* 큰 텍스트박스 관리 (ex 이름 아이디 비밀번호 등) */
+.BigText {
+    padding: 0px 10px;
+    margin: 10px 0px 10px;
+    width: 380px;
+    height: 45px;
+    line-height: 10px;
+    border: 1px solid #D5D5D5;
+}
+
+/* 성별 전화번호 */
+.BigText2 {
+    padding: 0px 10px;
+    margin: 10px 0px 10px;
+    width: 400px;
+    height: 45px;
+    line-height: 10px;
+    border: 1px solid #D5D5D5;
+}
+
+/* 생년월일 중 ("연도")와 ("일")에 해당하는 텍스트 박스 관리 */
+.SmallText {
+    padding: 0px 10px;
+    margin: 10px 0px 20px;
+    width: 110px;
+    height: 45px;
+    line-height: 10px;
+    border: 1px solid #D5D5D5;
+}
+
+/* 생년월일중 월에 해당하는 텍스트 박스 */
+#birthday2 {
+    padding: 0px 10px;
+    margin: 10px 0px 20px;
+    width: 125px;
+    height: 48px;
+    line-height: 10px;
+    border: 1px solid #D5D5D5;
+}
+
+/* 아이디 설명문 우측정렬 */
+#id::placeholder {
+    text-align: right;
+}
+
+/* 설명문 띄우기위해 사용 */
+
+/* join클래스 내부 전송버튼 조정 */
+.Join input[type=submit] {
+    /* 버튼 색 */
+    background-color: #00C850;
+    /* 글자 색 */
+    color: white;
+    /* 글자크기 */
+    font-size: 0.8em;
+    /*글자굵기  */
+    font-weight: bold;
+    /* 테두리색 없음 */
+    border: none;
+
+}
+
+
+/* 번호입력 스타일 */
+#tel {
+    padding: 0px 10px;
+    width: 260px;
+    height: 45px;
+    border: 1px solid #D5D5D5;
+}
+
+/* 번호입력 */
+#certify {
+
+    width: 110px;
+    height: 45px;
+}
+
+/* 가입하기 위치조정 */
+#printjoin {
+    margin-left: -10px;
+}
+
+/* (선택)표시 */
+small {
+    color: #BDBDBD;
+}
+
+
+/* 하이퍼링크 밑줄 없애기 및 글자크기조정 */
+a {
+    /* 하이퍼링크 밑줄 없애기 */
+    text-decoration-line: none;
+    /* 글자 색상 및 크기 설정 */
+    color: black;
+    font-size: 0.8em;
+
+}
+
+
+/* 최하단 중앙정렬 */
+footer {
+    margin-top: 40px;
+
+    text-align: center;
+    font-size: 0.7em;
+}

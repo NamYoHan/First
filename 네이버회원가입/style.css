@@ -1,0 +1,161 @@
+/* 전체선택자 */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* 전체적인 배경색 */
+html {
+    background-color: #F6F6F6;
+}
+
+/* 전체적인 틀 */
+.Wrap {
+    margin: auto;
+    width: 385px;
+    font-size: 0.8em;
+}
+
+/* 언어부분  */
+nav {
+    position: absolute;
+    left: 80%;
+    border-color: #D5D5D5;
+}
+
+/* 로고설정 */
+.Image {
+    /* 조금더 완벽한 중앙정렬을 위해 사용 */
+    margin: auto;
+    /* 로고와 Input속성간 거리조절을 위해 사용 */
+    padding: 35px;
+    /* block 속성으로 이미지가 자리차지하도록 만듦 */
+    display: block;
+    /* 로고 크기 조절 */
+    height: 43px;
+}
+
+/* 이용약관 윗부분 폰트사이즈 */
+
+/* ul 리스트 타입 없게만듦 */
+ul {
+    list-style-type: none;
+}
+
+
+
+/* 이용약관 텍스트박스 설정 */
+.text1 {
+    /* 텍스트박스와 라벨 사이 간격띄우기 */
+    margin: 5px 0px 10px 0px;
+    ;
+    /* 텍스트박스 내부 글자여백을위해 사용 */
+    padding: 10px;
+    /* 텍스트 크기설정 */
+    width: 363px;
+    height: 55px;
+    /* 배경색을 흰색으로 설정 */
+    background-color: #ffff;
+    /* 텍스트박스 테두리 설정 */
+    border: 1px solid #D5D5D5;
+    /* 글자 색상 및 크기 설정 */
+    color: gray;
+    font-size: 0.6em;
+    /* 스크롤설정 */
+    overflow: auto;
+}
+
+/* 이용약관 텍스트박스 설정 */
+.text2 {
+    /* 글자간 여백을 주기위해 사용 */
+    padding: 5px 0px 40px 0px;
+    /* 텍스트 박스의 크기설정 */
+    width: 380px;
+    /* 선이 보이지않는 텍스트박스 설정 */
+    border: 1px none;
+    /* 글자 색상 및 크기 설정 */
+    color: gray;
+    font-size: 0.6em;
+}
+
+/* (필수)단어에 대한 설정 */
+#SpanTe {
+    font-size: 0.7em;
+    color: #00C850;
+}
+
+/* (선택)단어에 대한 설정 */
+small {
+    font-size: 0.7em;
+    color: #D5D5D5;
+}
+
+/* 어린이용 안내 버튼설정 */
+#children {
+    /* 우측정렬 */
+    float: right;
+    /* 박스 크기설정 */
+    width: 70px;
+    height: 20px;
+    /* 배경색 설정 */
+    background-color: white;
+    /* 박스 테두리 설정 */
+    border: 1px solid #00C850;
+    /* 글자 색상 및 크기 설정 */
+    color: #00C850;
+    font-size: 0.7em;
+}
+
+/* 취소버튼  */
+#ReButton {
+    /* 버튼크기 설정*/
+    width: 190px;
+    height: 40px;
+    /* 버튼테두리 설정 */
+    border: none;
+    /* 버튼 배경색 설정 */
+    background-color: gray;
+    /* 글자 색상 및 크기 설정 */
+    color: white;
+    font-size: 1.5em;
+}
+
+/* 확인버튼 */
+#SeButton {
+    /* 버튼크기 설정 */
+    width: 190px;
+    height: 40px;
+    /* 버튼테두리 설정 */
+    border: none;
+    /* 버튼 배경색 설정 */
+    background-color: #00C850;
+    /* 글자 색상 및 크기 설정 */
+    color: white;
+    font-size: 1.5em;
+}
+
+/* 리스트 안에 있는 p태그 속성 설정 */
+li>p {
+    margin: 30px;
+    /* 글자 정렬 색상 크기설정 */
+    text-align: center;
+    color: gray;
+    font-size: 0.5em;
+}
+
+/* 하이퍼링크 설정 */
+a {
+    /* 하이퍼링크 밑줄 없애기 */
+    text-decoration-line: none;
+    /* 글자 색상 및 크기 설정 */
+    color: black;
+    font-size: 0.7em;
+
+}
+
+footer {
+    /* 글자 정렬 크기 설정 */
+    text-align: center;
+    font-size: 0.7em;
+    color: gray;
+}

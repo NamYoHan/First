@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ko">
+<style>
+    /* style.css에 있는 style 형식을 가져왓다.*/
+    @import url("style2.css");
+</style>
+
+<head>
+    <!-- 문자형식 -->
+    <meta charset="UTF-8">
+
+    <!-- 탭 제목 및 탭 아이콘넣기 -->
+    <title>네이버 : 회원가입</title>
+    <link rel="icon" href="img/Navertab2.png">
+</head>
+
+<body>
+
+
+    <div class="Wrap">
+
+        <!-- 최상단부분 -->
+        <header>
+            <!-- 네이버 로고 (이미지파일로가져옴) 클래스 image -->
+            <a href="http://naver.com" target="_self" id=logo><img src="img/logo_naver.png" class="Image"></a>
+        </header>
+
+
+
+        <!-- ul위치 조정을 위해 ul을 포장했다. -->
+        <section class="UserInput">
+            <!-- ul 제어를위해 join클레스를 사용했다. -->
+            <ul class="Join">
+
+                <li>
+                    <label>
+                        <!-- 아이디 박스 -->
+                        <h4>아이디</h4>
+                        <input type="text" name="nameId" id="id" class="BigText" placeholder="@naver.com " onblur='IdChk()' required>
+                    </label>
+                </li>
+                <!-- 아이디 에러메세지 -->
+                <span id=id_error></span>
+
+
+
+                <li>
+                    <label>
+                        <!-- 비밀번호박스 -->
+                        <h4>비밀번호</h4>
+                        <input type="password" name="namePw" id="pw" class="BigText" onblur='PwChk()' required>
+                    </label>
+                </li>
+                <!-- 비밀번호 에러 메세지 -->
+                <span id=pw_error></span>
+                <li>
+                    <label>
+                        <!-- 비밀번호 재확인 박스 -->
+                        <h4>비밀번호 재확인</h4>
+                        <input type="password" name="namePw" id="repw" class="BigText" onblur='RepwChk()' required>
+                    </label>
+                </li>
+                <!-- 비밀번호 재확인 에러 메세지 -->
+                <span id=repw_error></span>
+                <li>
+                    <label>
+                        <!-- 이름 박스 -->
+                        <h4>이름</h4>
+                        <input type="text" name="namename" id="name" class="BigText" onblur='NameChk()' required>
+                    </label>
+                </li>
+                <!-- 이름 에러 메세지 -->
+                <span id=name_error></span>
+
+                <li>
+                    <label>
+                        <!-- 생년월일 박스 -->
+                        <h4>생년월일</h4>
+                        <div class="birth">
+                            <input type="text" name="birthday" maxlength='4' id="birthday1" class="SmallText" onblur='BirthChk()'
+                                placeholder="년(4자)" required>
+                          
+                            <select id="birthday2" name="birthday"  onchange='BirthChk()'>
+                                <option value="1">1월</option>
+                                <option value="2">2월</option>
+                                <option value="3">3월</option>
+                                <option value="4">4월</option>
+                                <option value="5">5월</option>
+                                <option value="6">6월</option>
+                                <option value="7">7월</option>
+                                <option value="8">8월</option>
+                                <option value="9">9월</option>
+                                <option value="10">10월</option>
+                                <option value="11">11월</option>
+                                <option value="12">12월</option>
+                            </select>
+                           
+                            <input type="text" name="birthday" maxlength='2' id="birthday3" class="SmallText"  onblur='BirthChk()'
+                                placeholder="일  " required>
+                        </div>
+                    </label>
+                </li>
+                <!-- 생년월일 에러메세지 -->
+                <span id=birth_error></span>
+                <!-- 성별 박스 -->
+                <li><label>
+                        <h4>성별</h4>
+                        <select id="sight-gender" name="gender" id="gender" class="BigText2" required onchange="">
+                            <option value="gender">성별</option>
+                            <option value="man">남자</option>
+                            <option value="woman">여자</option>
+                            <option value="no">선택 안함</option>
+                        </select>
+                        </span>
+
+                    </label></li>
+                <!-- 이메일 박스 -->
+                <li>
+                    <label>
+                        <h4>본인 확인 이메일<small>(선택)</small></h4>
+                        <input type="email" class="BigText" id="email"onblur='EmailChk()'  placeholder="선택입력">
+                    </label>
+                </li>
+                <!-- 이메일 에러메세지 -->
+                <span id=email_error></span>
+
+                <li>
+                    <label>
+                        <h4>휴대전화 </h4>
+                        <select id="phon" name="Phon" id="PhonId" class="BigText2" onchange="">
+                            <option value="korean">대한민국 +82</option>
+                            <option value="china">중국 +86</option>
+                            <option value="japan">일본 +81</option>
+                            <option value="english">미국/캐나다 +1</option>
+                        </select>
+
+                        <!-- 전화번호 입력창 -->
+
+                        <input type="tel" id="tel" placeholder="전화번호 입력" onblur='PhonChk()' required>
+                        <input type="submit" value="인증번호 받기" id="certify">
+                        <!-- 인증번호 입력창 -->
+                        <input type="tel" id=retel class="BigText" placeholder="인증번호 입력하세요">
+                    </label>
+                </li>
+                <span id=phon_error></span>
+                <li>
+                    <label>
+                        <input type="submit" id="printjoin" class="BigText2" value="가입하기">
+                    </label>
+                </li>
+            </ul>
+        </section>
+
+
+
+       
+           
+        <script src=script2.js>
+        </script>
+        
+
+
+
+
+
+</body>
+<footer>
+    <p><a href="https://policy.naver.com/rules/service.html">이용약관</a> |
+        <a href="https://policy.naver.com/policy/privacy.html"><b>개인정보처리방침</b></a> |
+        <a href="https://policy.naver.com/rules/disclaimer.html">책임의한계와 법적고지</a> |
+        <a href="https://help.naver.com/service/5640/category/bookmark?lang=ko">회원정보 고객센터</a>
+    </p>
+
+    <a href="http://naver.com"><img src="img/logo_naver_small.png"></a> Copyright <a
+        href="https://www.navercorp.com/"><b>NAVER Corp. </b></a>All Rights Reserved.
+
+
+</footer>
+
+</div>
+
+</html>

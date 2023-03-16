@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+<style>
+    /* style.css에 있는 style 형식을 가져왓다.*/
+    @import url("style.css");
+</style>
+
+
+<!-- 전체적인 틀 -->
+<div class="Wrap">
+    <!-- 탭  및 문자형식 설정-->
+
+    <head>
+        <title>네이버 : 회원가입</title>
+        <link rel="icon" a href="img/Navertab.png">
+        <meta charset="UTF-8">
+    </head>
+
+    <!-- 언어라인 셀렉트박스  -->
+    <nav>
+        <select name="Languege" id=languege>
+            <option value="korean">한국어</option>
+            <option value="english">English</option>
+            <option value="china" 中>文</option>
+            <option value="japan">日本語</option>
+        </select>
+    </nav>
+
+    <!-- 네이버 로고 설정 -->
+    <header>
+        <!-- 네이버 로고 (이미지파일로 가져온 후 링크넣음)-->
+        <!-- Image 클래스로 로고 배치 및 크기 조절-->
+        <a href="http://naver.com" target="_self" id=logo><img src="img/logo_naver.png" class="Image"></a>
+        </a>
+    </header>
+
+    <body>
+        <script src="script.js"></script>
+        <ul>
+            <!-- 전체 선택 버튼 조절(전체 선택 버튼 클릭시 script.js파일에 잇는 CheckValue로 이동)-->
+            <li>
+                <input type="checkbox" class="checkAll"id = "checkall" name="ChkButtonAll"  onclick='CheckValueAll()'>
+
+                <label><b><u>네이버 이용약관, 개인정보 수집 및 이용. 위치기반서비스 이용약관(선택), 프로모션 정보 수신(선택)에 모두
+                            동의합니다.</b></u>
+                </label>
+            </li>
+            <br>
+
+
+            <li><input type="checkbox" id = "chk1" class="chkbox" name="ChkButton" onclick="CheckValues(this)">
+                <label> <b>네이버 이용약관 동의</b><span id="SpanTe">(필수)</span></label>
+            </li>
+
+            <div class="text1">
+                <h4>여러분을 환영합니다.</h4><br>
+                네이버 서비스 및 제품(이하 ‘서비스’)을 이용해 주셔서 감사합니다. 본 약관은
+                다양한 네이버 서비스의 이용과 관련하여 네이버 서비스를 제공하는 네이버
+                주식회사(이하 ‘네이버’)와 이를 이용하는 네이버 서비스 회원(이하 ‘회원’) 또
+                는 비회원과의 관계를 설명하며, 아울러 여러분의 네이버 서비스 이용에 도움
+                이 될 수 있는 유익한 정보를 포함하고 있습니다.
+            </div>
+            <br>
+
+
+
+            <li><input type="checkbox" class="chkbox" id = "chk2" name="ChkButton" onclick="CheckValues(this)">
+                <label><b>개인정보 수집 이용 동의</b><span id="SpanTe">(필수)</span></label>
+                <label><input type="button" id="children" name="child" value="어린이용 안내"
+                        onclick="location.href='https:nid.naver.com/user2/V2Join?m=kidGuide' ">
+            </li></label>
+            <div class="text1">
+                개인정보보호법에 따라 네이버에 회원가입 신청하시는 분께 수집하는 개인정
+                보의 항목, 개인정보의 수집 및 이용목적, 개인정보의 보유 및 이용기간,
+                동의 거부권 및 동의 거부 시 불이익에 관한 사항을 안내 드리오니
+                자세히 읽은 후 동의하여 주시기 바랍니다.
+                1. 수집하는 개인정보
+                이용자는 회원가입을 하지 않아도 정보 검색, 뉴스 보기 등 대부분의 네이버 서비스를 회원과
+                동일하게 이용할 수 있습니다. 이용자가 메일, 캘린더, 카페, 블로그 등과 같이
+                개인화 혹은 회원제 서비스를 이용하기 위해 회원가입을 할 경우,
+                네이버는 서비스 이용을 위해 필요한 최소한의 개인정보를 수집합니다
+            </div>
+            <br>
+
+
+
+
+            <li><input type="checkbox" class="chkbox"id = "chk3" name="ChkButton" onclick="CheckValues(this)">
+                <label><b>위치기반서비스 이용약관 동의<small>(선택)</small></b></label>
+            </li>
+            <div class="text1">
+                위치기반서비스 이용약관에 동의하시면, 위치를 활용한 광고 정보 수신 등을
+                포함하는 네이버 위치기반 서비스를 이용할 수 있습니다.
+                제 1 조 (목적)
+                이 약관은 네이버 주식회사 (이하 “회사”)가 제공하는 위치기반서비스와
+                관련하여 회사와 개인위치정보주체와의 권리, 의무 및 책임사항,
+                기타 필요한 사항을 규정함을 목적으로 합니다.제 2 조 (약관 외 준칙)
+                이 약관에 명시되지 않은 사항은 위치정보의 보호 및 이용 등에 관한 법률,
+                개인정보보호법, 정보통신망 이용촉진 및 정보보호 등에 관한 법률, 전기통신기
+                본법, 전기통신사업법 등 관계법령과 회사의 이용약관 및 개인정보처리방침, 회사가
+                별도로 정한 지침 등에 의합니다.
+            </div>
+            <br>
+
+
+            <li><input type="checkbox" class="chkbox"id = "chk4" name="ChkButton" onclick="CheckValues(this)">
+                <label><b>프로모션 정보 수신 동의<small>(선택)</b></small>
+                </label>
+            </li>
+            <div class="text2">
+                네이버에서 제공하는 이벤트/혜택 등 다양한 정보를 휴대전화(네이버앱 알림 또는 문자), 이메일로 받아보실 수 있습니다.
+                일부 서비스(별도 회원 체계로 운영하거나 네이버 가입 이후 추가 가입하여 이용하는
+                서비스 등)의 경우, 개별 서비스에 대해 별도 수신 동의를 받을 수 있으며,
+                이때에도 수신 동의에 대해 별도로 안내하고 동의를 받습니다.
+            </div>
+
+            <li><label><input type="reset" id='ReButton' name="resset" value="취소"
+                        onclick="location.href = 'https:www.naver.com'"></label>
+                <label><input type="submit" id='SeButton' name="set" value="확인"
+                        onclick="submit()"></label>
+            </li>
+            <li>
+                <p>회사 동아리 등 단체에서 사용할 ID가 필요하세요?
+                    <a href="https://nid.naver.com/user2/join/groupJoin?lang=ko_KR">단체 회원가입</a>
+                </p>
+            </li>
+        </ul>
+
+
+    </body>
+
+    <footer>
+        <p><a href="https://policy.naver.com/rules/service.html">이용약관</a>
+            <a href="https://policy.naver.com/policy/privacy.html"><b>개인정보처리방침</b></a>
+            <a href="https://policy.naver.com/rules/disclaimer.html">책임의한계와 법적고지</a>
+            <a href="https://help.naver.com/service/5640/category/bookmark?lang=ko">회원정보 고객센터</a>
+        </p>
+
+        <a href="http://naver.com"><img src="img/logo_naver_small.png" id = small_logo></a> Copyright <a href="https://www.navercorp.com/"><b>NAVER Corp. </b></a>All Rights Reserved.
+
+
+    </footer>
+</div>
+
+
+</html>
